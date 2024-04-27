@@ -1,0 +1,191 @@
+/* Global Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header-section {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    height: 5rem;
+    margin-bottom: 80px;
+    z-index: 10;
+    font-family: 'Crimson Pro', Calibri;
+}
+
+.main-logo-container {
+    width: 120px;
+}
+
+.main-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+.navigation ul li {
+    display: inline-flex;
+    margin-right: 1.3rem;
+}
+
+.navigation ul li a {
+    color: #000;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: solid 2px #000;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 2px;
+    font-weight: 600;
+    font-display: swap;
+}
+
+.navigation ul {
+    width: 100%;
+    text-align: right;
+    float: right;
+}
+
+.navigation {
+    width: 90%; /* MAKE THIS A PERCENT TO FIX NAVIGATION BAR */
+}
+
+@media only screen and (max-width: 535px) {
+    .navigation ul li a {
+        width: 65px;
+        font-size: 15px;
+        text-align: center;
+        height: 32.6px;
+    }
+    .navigation ul .secondary-button {
+        line-height: 2em;
+    }
+    .navigation ul li {
+        vertical-align: middle;
+    }
+}
+
+/* Mission Section */
+.mission-section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-image-container {
+    min-width: 100%;
+    max-height: 100px;
+    display: block;
+}
+
+.mission-image-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.mission-section .mission-statement {
+    background-color: rgb(40, 43, 45);
+    padding: 4px 40px;
+    max-width: 90%;
+    text-align: center;
+    top: 150px;
+    position: absolute;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 900px) {
+    .mission-section .mission-statement{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .mission-section .mission-statement{
+        width: 150px;
+    }
+}
+
+/* Portfolio */
+.portfolio div img {
+    width: 200px;
+    height: 200px;
+}
+
+.portfolio div {
+    display: flex;
+    border: solid 2px black;
+    border-radius: 4px;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.text {
+    margin-top: 500px;
+}
+
+.portfolio {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.portfolio div h3 {
+    margin: auto 15px;
+    font-weight: 500;
+    font-family: 'Roboto Slab';
+}
+
+/* Team Section */
+
+.team-people {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
+.team-section {
+    background-color: bisque;
+}
+
+.team-section .our-team {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+.team-section .team-people img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.team-section .team-people div {
+    width: 250px;
+    height: 300px;
+    border: solid 2px black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.team-people div h2,
+.team-people div h3 {
+    text-align: center;
+}
